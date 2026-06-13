@@ -37,6 +37,7 @@ body > article {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr 2fr;
+    align-items: center;
 }
 
 .top-header-content-search {
@@ -74,4 +75,8 @@ body > article {
     border: 1px solid blue;
     grid-column: 2/3;
     grid-row: 2/3;
+
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
 }
