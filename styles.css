@@ -5,11 +5,22 @@
     box-sizing: border-box;
 }
 
+/* Import Roboto */
+.roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
 body {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 5fr;
+    font-family: "Roboto", "Helvetica", sans-serif;
 }
 
 .header-container {
@@ -22,6 +33,12 @@ body {
     border: 1px solid red;
     grid-column: 1/2;
     grid-row: 1/3;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    padding: 16px;
 }
 
 .content-container {
