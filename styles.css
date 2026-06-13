@@ -23,10 +23,40 @@ body {
     font-family: "Roboto", "Helvetica", sans-serif;
 }
 
+body > header,
+body > nav,
+body > article {
+    padding: 16px;
+}
+
 .header-container {
     border: 1px solid orange;
     grid-column: 2/3;
     grid-row: 1/2;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 2fr;
+}
+
+.top-header-content-search {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.top-header-content-profile-small {
+    grid-column: 4/6;
+    grid-row: 1/2;
+}
+
+.bottom-header-content-profile-big {
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+
+.bottom-header-content-buttons {
+    grid-column: 4/6;
+    grid-row: 2/3;
 }
 
 .side-bar {
@@ -38,7 +68,6 @@ body {
     flex-direction: column;
     gap: 24px;
 
-    padding: 16px;
 }
 
 .content-container {
