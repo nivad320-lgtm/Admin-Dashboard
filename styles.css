@@ -8,7 +8,7 @@
 :root {
     --primary-padding: 16px;
     --primary-gap: 24px;
-    --primary-color: rgb(52, 64, 117);
+    --primary-color: #1992D4;
 }
 
 /* Import Roboto */
@@ -78,13 +78,18 @@ body > article {
     gap: var(--primary-gap);
 }
 
+.top-header-content-profile-small > p:first-child {
+    font-size: 16px;
+    font-weight: 600;
+}
+
 .top-header-content-search img {
     height: 30px;
 }
 .top-header-content-search input {
     border-radius: 16px;
     border: none;
-    background-color: lightblue;
+    background-color: #E2E8F0;
     width: 80%;
     height: 1.5rem;
     padding: var(--primary-padding);
@@ -95,7 +100,8 @@ body > article {
     color: white;
     background-color: var(--primary-color);
     padding: 12px 28px;
-    border-radius: 16px;  
+    border-radius: 16px;
+    font-weight: bold;  
 }
 
 .side-bar {
@@ -116,7 +122,7 @@ body > article {
 }
 
 .content-container {
-    background-color: lightgray;
+    background-color: #E2E8F0;
     border: 1px solid blue;
     grid-column: 2/3;
     grid-row: 2/3;
@@ -180,9 +186,16 @@ body > article {
     gap: var(--primary-gap);
 }
 
-.content-right-announcements-box,
-.content-right-trending-user {
+.content-right-announcements-box{
     padding: 32px;
+}
+
+.content-right-announcements-box div:not(:last-child) {
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: var(--primary-padding);
+}
+.content-right-announcements-box div:not(:first-child) {
+    padding-top: var(--primary-padding);
 }
 
 .box-images {
@@ -191,6 +204,23 @@ body > article {
     gap: var(--primary-gap);
 }
 
-.box-images img {
+.box-images img{
     height: 30px;
+}
+
+.content-right-trending-user {
+    display: flex;
+    flex-direction: column;
+    gap: var(--primary-gap);
+}
+
+.content-right-trending-user-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.content-right-trending-user-container img {
+    height: 50px;
+    justify-self: center;
 }
