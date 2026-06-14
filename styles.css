@@ -90,9 +90,22 @@ body > article {
     grid-column: 1/2;
     grid-row: 1/3;
 
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.content-left-box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 24px;
+    
+}
+
+.content-left > p:first-child {
+    color: red;
+    justify-self: center;
+    border: 1px solid black;
 }
 
 .content-right {
